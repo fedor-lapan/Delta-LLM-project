@@ -104,7 +104,7 @@ def subject_call(name: str)->str:
         request = requests.get(
                         "https://openlibrary.org/search.json",
                         params={
-                            "subject": "fantasy",
+                            "subject": name,
                             "limit": 5
                         }
                     ).json()
