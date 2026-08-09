@@ -26,12 +26,14 @@ async def on_message(message):
     """
     if message.author == client.user:
         return None # checks if the message was sent by himself
+    if client.user not in  message.mentions:
+        return None
     print("Input recived")
-    user_id = str(message.author.id) # saves the user id , basicly who wrote that
+    server_id = str(message.guild.id) # saves the user id , basicly who wrote that
 
     response = invoke_agent(
         message.content,
-        user_id
+        server_id
     )
     while calls != 0:
         if response is False:
