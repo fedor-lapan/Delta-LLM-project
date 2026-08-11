@@ -28,12 +28,13 @@ async def on_message(message):
         return None # checks if the message was sent by himself
     if client.user not in  message.mentions:
         return None
-    print("Input recived")
-    server_id = str(message.guild.id) # saves the user id , basicly who wrote that
-
+    #print("Input recived")
+    server_id = str(message.guild.id) # saves theserver id, so no chats get mixed
+    user_id = message.author.id       # seves the user id
     response = invoke_agent(
         message.content,
-        server_id
+        server_id, 
+        user_id
     )
     while calls != 0:
         if response is False:
@@ -59,7 +60,7 @@ async def on_message(message):
                 await message.channel.send(response)
             except:
                 pass
-    print("working")
+    #print("working")
 
 
 client.run(TOKEN)

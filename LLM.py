@@ -36,13 +36,14 @@ agent = create_agent(
     checkpointer=memory,
 )
 # setting up the actual agent with memory for each user
-def invoke_agent(message: str, user_id):
+def invoke_agent(message: str, user_id, server_id):
     """
     Varaible explanaition:
         - message -> User prompt or input
         - user_id -> to respond unice for each user
     This tool invokes the agent which will later call tools an doutut data
     """
+    thread_id = f"{server_id}:{user_id}"
     try:
         config = {"configurable": {"thread_id": "some-id"}}
         response = agent.invoke(
