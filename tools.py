@@ -29,9 +29,7 @@ def author_call(name: str)->str:
             }
         ).json()
         author = request["docs"][0]
-        subjects = []
-        for index in range(3):
-            subjects.append(author.get("top_subjects", "Not given")[index])
+        subjects = author.get("top_subjects", [])[:3]
         return {
             "Full name": author.get("name", "Unknown"),
             "Birth date": author.get("birth_date", "Unknown"),

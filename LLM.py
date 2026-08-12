@@ -36,7 +36,7 @@ agent = create_agent(
     checkpointer=memory,
 )
 # setting up the actual agent with memory for each user
-def invoke_agent(message: str, user_id):
+def invoke_agent(message: str, thread_id):
     """
     Varaible explanaition:
         - message -> User prompt or input
@@ -49,7 +49,7 @@ def invoke_agent(message: str, user_id):
             {"messages": [{"role": "user", "content": message}]},
             config={
                 "configurable": {
-                "thread_id": user_id
+                "thread_id": thread_id
                     },
             }
         )
@@ -77,7 +77,7 @@ if __name__ == "__main__":
                 calls -= 1
             else:
                 break
-            if call == 0:
+            if calls == 0:
                 sys.exit()
             print("In waiting")
             time.sleep(30) # the period for a 429 error ( every 60 sec the error will be cleared, so we have 1/2 chance of escaping the error)
