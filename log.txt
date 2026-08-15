@@ -8,3 +8,58 @@ Input recieved:   tell me about Jane Austen
 Sending response sucsesfully
 Input recieved:   sure
 Sending response sucsesfully
+Logged in as AI Librarian#4443:
+	date: 2026-08-13
+	time: 15:35:16.815479
+Input recieved:   Hi
+Sending response sucsesfully
+Input recieved:  tell me about Jane Austen
+Sending response sucsesfully
+Input recieved:  sure
+Sending response sucsesfully
+Input recieved:  please tell me about Jane Austen
+Sending response sucsesfully
+Input recieved:  tell me about the book topic English literature
+Sending response sucsesfully
+Input recieved:   tell me about the book topic English literature
+Sending response sucsesfully
+Input recieved:   tell me about the book topic English literature
+Sending response sucsesfully
+Input recieved:  do you have some interasting facts about the topic?
+Sending response sucsesfully
+Input recieved:  do you have some interasting facts about the topic?
+Sending response sucsesfully
+Failed to send response due to discord issue
+Failed to send response due to discord issue
+Logged in as AI Librarian#4443:
+	date: 2026-08-13
+	time: 15:58:34.691998
+Input recieved:  hi
+Sending response sucsesfully
+Logged in as AI Librarian#4443:
+	date: 2026-08-13
+	time: 16:00:09.855480
+Input recieved:   hi
+Sending response sucsesfully
+Input recieved:  tell me about Jane Austen pls
+Sending response sucsesfully
+Input recieved:  tell me about Jane Austen
+Sending response sucsesfully
+Input recieved:  sure
+Sending response sucsesfully
+Input recieved:  list some books about sci fiction
+Sending response sucsesfully
+Input recieved:  thank you for  your help. Thank you for listening to my presentaition
+Sending response sucsesfully
+Input recieved:  hi
+Sending response sucsesfully
+Input recieved:  tell me about Jane austen please
+Sending response sucsesfully
+Input recieved:  tell me about Jane austen please
+Sending response sucsesfully
+Input recieved:  tell me about Jane austen please
+Sending response sucsesfully
+Input recieved:  search more about her please
+Sending response sucsesfully
+Input recieved:   hi
+Sending response sucsesfully

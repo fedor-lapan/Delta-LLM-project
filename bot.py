@@ -1,11 +1,9 @@
 import discord                          # import requered library's for the discord bot
 import os                               # for key browse
-import time                             # for 429 handling and debug
 from dotenv import load_dotenv          # for key browse
 from LLM import invoke_agent            # imports the main agent core
 load_dotenv()                           # loads .env file data
 TOKEN = os.getenv("DISCORD_TOKEN")      # saves discord token as TOKEN
-import sys                              # for system exit
 import random                           # made for smiley choise
 import asyncio                          # for asyncronised functions
 from datetime import datetime

@@ -115,36 +115,3 @@ def subject_call(name: str)->str:
         return False
 
 
-def create_database():
-    """
-    The tool is not ready yet, dont use it
-    """
-    return True
-
-
-def clear_database():
-    """
-    The tool is not ready yet, dont use it
-    """
-    return True
-
-
-def remove_from_database():
-    """
-    The tool is not ready yet, dont use it
-    """
-    return True
-
-
-def mark_book():
-    """
-    The tool is not ready yet, dont use it
-    """
-    return True
-
-def add_book():
-    """
-    The tool is not ready yet, dont use it
-    """
-    return True
-

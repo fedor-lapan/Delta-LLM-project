@@ -15,10 +15,7 @@ from tools import author_call, book_call, subject_call # importing all tools for
 from dotenv import load_dotenv                         # browsing key from .env
 import os                                              # pulls the key out of the env files
 from System_prompt import SYSTEM_PROMPT                # safety information
-import time                                            # optional (  usefull in the boot file if you make a discord bot or
-#                                                                    here if you just runn it in the terminal  )
 load_dotenv()                                          # browses the .env file
-import sys                                             # for the error handling
 MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY")         # saves the browsed key in a variable
 assert MISTRAL_API_KEY, "MISTRAL_API_KEY is not set in the .env file" # reactes if varaible is not  found in the .env file
 
@@ -44,7 +41,6 @@ def invoke_agent(message: str, thread_id):
     This tool invokes the agent which will later call tools an doutut data
     """
     try:
-        config = {"configurable": {"thread_id": "some-id"}}
         response = agent.invoke(
             {"messages": [{"role": "user", "content": message}]},
             config={
